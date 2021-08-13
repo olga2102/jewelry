@@ -1,0 +1,43 @@
+.intro {
+  position: relative;
+  padding: 195px 20px;
+  margin-bottom: 130px;
+  width: 100%;
+  min-height: 463px;
+  background-image: url("../img/index/bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(86, 64, 52, 0.7);
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.intro__title {
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 130%;
+  text-align: center;
+  color: $basic-white;
+
+  @media (max-width: $mobile-width) {
+    font-size: 38px;
+  }
+}
+
+.intro__slogan {
+  margin: 0 0 10px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 130%;
+  text-align: center;
+  color: $basic-white;
+
+  @media (max-width: $mobile-width) {
+    font-size: 34px;
+  }
+}
