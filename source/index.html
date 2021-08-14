@@ -118,22 +118,167 @@
       <h2>Blog</h2>
       <a>Read All</a>
       <ul class="blog__list">
-        <li>
-          <time datetime="2019-09-30">September 30, 2019</time>
-          <h3>How to care for your jewellery</h3>
-          <a>Read Article</a>
+        <li class="blog__item blog__item--care">
+          <div>
+            <time datetime="2019-09-30">September 30, 2019</time>
+            <h3>How to care for your jewellery</h3>
+            <a>Read Article</a>
+          </div>
         </li>
-        <li>
-          <time datetime="2019-09-23">September 23, 2019</time>
-          <h3>Power of crystals</h3>
-          <a>Read Article</a>
+        <li class="blog__item blog__item--crystal">
+          <div>
+            <time datetime="2019-09-23">September 23, 2019</time>
+            <h3>Power of crystals</h3>
+            <a>Read Article</a>
+          </div>
         </li>
-        <li>
-          <time datetime="2019-09-16">September 16, 2019/time>
-          <h3>AW 19 trends</h3>
-          <a>Read Article</a>
+        <li class="blog__item blog__item--trends">
+          <div>
+            <time datetime="2019-09-16">September 16, 2019</time>
+            <h3>AW 19 trends</h3>
+            <a>Read Article</a>
+          </div>
         </li>
       </ul>
     </section>
+    <section class="question container">
+      <h2>Frequently asked questions</h2>
+      <ul class="question__list">
+        <li>
+          <h3>What materials are the jewellery made of?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </li>
+        <li>
+          <h3>Which countries do you deliver to?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </li>
+        <li>
+          <h3>What are the payment methods?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </li>
+        <li>
+          <h3>Can I return the jewellery if it didn’t fit me?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery container">
+        <h2>@Chjewellery</h2>
+        <a>Follow Us</a>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--earrings">
+            <picture>
+              <img src="img/index/gallery-earrings.jpg" width="230" height="230" alt="Золотые серьги в форме квадратов">
+            </picture>
+          </li>
+          <li class="gallery__item gallery__item--medallion">
+            <picture>
+              <img src="img/index/gallery-medallion.jpg" width="230" height="150" alt="Золотые подвески с медальоном">
+            </picture>
+          </li>
+          <li class="gallery__item gallery__item--girl">
+            <picture>
+              <img src="img/index/gallery-girl.jpg" width="399" height="412" alt="Девушка в крупных золотых серьгах с ракушками">
+            </picture>
+          </li>
+          <li class="gallery__item gallery__item--bracelet">
+            <picture>
+              <img src="img/index/gallery-bracelet.jpg" width="230" height="230" alt="Женская рука с браслетом с крупным аметистом и кольцом">
+            </picture>
+          </li>
+          <li class="gallery__item gallery__item--set">
+            <picture>
+              <img src="img/index/gallery-set.jpg" width="230" height="150" alt="Комплект, состоящий из цепи с кулоном, сережек и браслета">
+            </picture>
+          </li>
+          <li class="gallery__item gallery__item--round">
+            <picture>
+              <img src="img/index/gallery-round-earrings.jpg" width="230" height="230" alt="Серьги кольца из золота">
+            </picture>
+          </li>
+          <li class="gallery__item gallery__item--rings">
+            <picture>
+              <img src="img/index/gallery-rings.jpg" width="230" height="150" alt="Руки, унизанные кольцами">
+            </picture>
+          </li>
+        </ul>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+    <section class="footer__subscription subscription">
+    <h2>The good stuff in your inbox </h2>
+    <p>News and updates from CH. No spam, we promise.</p>
+    <form>
+      <label for="email">
+        <input type="email" id="email" name="email" placeholder="Your E-mail">
+      </label>
+      <div>
+      <button>Sign Up</button>
+      <svg width="29" height="9">
+        <use xlink:href="img/all-pages/sprite.svg#arrow"></use>
+      </svg>
+    </div>
+    </form>
+  </section>
+  <section class="footer__info info">
+<ul class="info__list">
+  <li>Ordering & Payment</li>
+  <li>Terms & Conditions</li>
+  <li>Returns & Exchanges</li>
+  <li>Delivery</li>
+  <li>About CH</li>
+  <li>Stores & Hours</li>
+  <li>Jobs</li>
+  <li>Contact Us</li>
+</ul>
+  </section>
+  <section class="footer__social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/ch"
+          aria-label="Ссылка на Фэйсбук CH">
+          <svg class="social-picture" width="8" height="15">
+            <use xlink:href="img/all-pages/sprite.svg#facebook"></use>
+          </svg>
+          <p>Facebook</p>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--insta" href="https://www.instagram.com/ch"
+          aria-label="Ссылка на Инстаграм CH">
+          <svg class="social-picture" width="15" height="15">
+            <use xlink:href="img/all-pages/sprite.svg#insta"></use>
+          </svg>
+          <p>Instagram</p>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--pinterest" href="https://www.pinterest.com/ch"
+          aria-label="Ссылка на Пинтерест CH">
+          <svg class="social-picture" width="15" height="15">
+            <use xlink:href="img/all-pages/sprite.svg#pinterest"></use>
+          </svg>
+          <p>Pinterest</p>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://www.twitter.com/ch"
+          aria-label="Ссылка на Твиттер CH">
+          <svg class="social-picture" width="15" height="13">
+            <use xlink:href="img/all-pages/sprite.svg#twitter"></use>
+          </svg>
+          <p>Twitter</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+</div>
+  </footer>
 </body>
