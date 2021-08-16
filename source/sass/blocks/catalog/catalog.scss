@@ -1,0 +1,41 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__swiper {
+  width: 76%;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__list li {
+  margin-bottom: 40px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.catalog__list h3,
+.catalog__list p {
+  margin: 0 0 15px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $font-color;
+  text-align: center;
+}
+
+.catalog__list img {
+  margin: 0 auto 15px;
+}

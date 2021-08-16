@@ -71,9 +71,180 @@
     </div>
   </header>
   <main>
-    <section clas="intro">
-<h2>ALL JEWELLERY</h2>
+    <section class="intro">
+      <h2>ALL JEWELLERY</h2>
+      <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
     </section>
+    <section class="catalog container">
+      <h2 class="visually-hidden">Catalog</h2>
+      <form class="catalog__filter filter">
+        <fieldset>
+          <button>Product</button>
+          <ul>
+            <li>
+              <input type="checkbox" id="necklaces" name="necklaces" checked>
+              <label for="necklaces">Necklaces</label>
+            </li>
+            <li>
+              <input type="checkbox" id="chokers" name="chokers" checked>
+              <label for="chokers">Chokers</label>
+            </li>
+            <li>
+              <input type="checkbox" id="rings" name="rings">
+              <label for="rings">Rings</label>
+            </li>
+            <li>
+              <input type="checkbox" id="earrings" name="earrings" checked>
+              <label for="earrings">Earrings</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <button>Material</button>
+          <ul>
+            <li>
+              <input type="checkbox" id="gold" name="gold" checked>
+              <label for="gold">Gold</label>
+            </li>
+            <li>
+              <input type="checkbox" id="silver" name="silver">
+              <label for="silver">Silver</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <button>Collection</button>
+          <ul>
+            <li>
+              <input type="checkbox" id="flamingo" name="flamingo">
+              <label for="flamingo">Pink flamingo</label>
+            </li>
+            <li>
+              <input type="checkbox" id="dreams" name="dreams">
+              <label for="dreams">Dreams</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <button>Price</button>
+          <div class="form__inner" tabindex="0">
+            <p class="form__text">$ 55</p>
+          <div class="form__range range">
+            <div class="range__switch range__switch--one" tabindex="0" aria-label="Уменьшить площадь квартиры">
+            </div>
+            <div class="range__switch range__switch--two" tabindex="0" aria-label="Увеличить площадь квартиры">
+            </div>
+          </div>
+          <p class="form__text">$ 155</p>
+          </div>
+        </fieldset>
+        <button type="submit">Apply</button>
+        <button type="reset">Clear All</button>
+      </form>
+      <div class="catalog__swiper swiper-container">
+        <ul class="catalog__list swiper-wrapper">
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/earrings-pearl.jpg" width="270" height="272"
+                alt="Серьги с жемчугом">
+              <h3>Double pearl earrings</h3>
+              <p>$ 55</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/choker-gold-bead.jpg" width="270" height="272"
+                alt="Черный чокер с золотой подвеской">
+              <h3>Choker with gold bead</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/gold-layered-necklace.jpg" width="270" height="272"
+                alt="Ожерелье из нескольких золотых цепей">
+              <h3>Gold layered necklace</h3>
+              <p>$ 155</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/blue-gemstone-pendant.jpg" width="270" height="272"
+                alt="Серебряный кулон с бирюзой">
+              <h3>Blue gemstone pendant</h3>
+              <p>$ 105</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/boho-earrings.jpg" width="270" height="272"
+                alt="Серьги с бирюзой">
+              <h3>Boho earrings</h3>
+              <p>$ 75</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/bird-necklace.jpg" width="270" height="272"
+                alt="Золотое ожерелье с подвеской в виде птицы">
+              <h3>Gold bird necklace</h3>
+              <p>$ 135</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/leather-choker.jpg" width="270" height="272"
+                alt="Черный кожаный чокер">
+              <h3>Black leather choker</h3>
+              <p>$ 85</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/purple-gemstone-necklace.jpg" width="270" height="272"
+                alt="Серебряная цепочка с аметистом">
+              <h3>Necklace with amethyst</h3>
+              <p>$ 145</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/elephant-earrings.jpg" width="270" height="272"
+                alt="Золотые серьги в форме слонов">
+              <h3>Elephant earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/threader-necklace-closeup.jpg" width="270" height="272"
+                alt="Серебряная цепь с подвеской в виде круга">
+              <h3>Threader necklace</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/origami-crane-necklace.jpg" width="270" height="272"
+                alt="Серебряная цепь с подвеской в виде абстракции">
+              <h3>Origami crane necklace</h3>
+              <p>$ 105</p>
+            </a>
+          </li>
+          <li class="catalog__item swiper-slide">
+            <a class="catalog__item-link" href="#">
+              <img class="catalog__img" src="img/catalog/marble-earrings.jpg" width="270" height="272"
+                alt="Серьги с мрамором">
+              <h3>Marble earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pag"></div>
+        <div class="swiper swiper--prev"></div>
+        <div class="swiper swiper--next"></div>
+    </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
