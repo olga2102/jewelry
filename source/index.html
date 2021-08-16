@@ -7,9 +7,13 @@
   <meta name="description" content="Купить ювелирные украшения.">
   <title>Каталог ювелирных украшений</title>
   <link href="css/style.css" rel="stylesheet">
-  <!-- <link href="fonts/robotocondensed-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="fonts/robotocondensed-bold.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="fonts/ptmono-regular.woff2" as="font" rel="preload" crossorigin="anonymous"> -->
+  <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="cormorant-garamond-v10-latin-600.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="cormorant-garamond-v10-latin-italic.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="poppins-v15-latin-500.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="poppins-v15-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="poppins-v15-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -73,7 +77,7 @@
     </section>
     <section class="new container">
       <h2 class="new__title">New In</h2>
-      <a class="new__link">Shop Now</a>
+      <a class="new__link" href="catalog.html">Shop Now</a>
       <div class="new__swiper swiper-container">
         <ul class="new__list swiper-wrapper">
           <li class="new__item swiper-slide">
@@ -167,118 +171,141 @@
       </ul>
     </section>
     <section class="gallery container">
-        <h2>@Chjewellery</h2>
-        <a>Follow Us</a>
-        <ul class="gallery__list">
-          <li class="gallery__item gallery__item--earrings">
-            <picture>
-              <img src="img/index/gallery-earrings.jpg" width="230" height="230" alt="Золотые серьги в форме квадратов">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--medallion">
-            <picture>
-              <img src="img/index/gallery-medallion.jpg" width="230" height="150" alt="Золотые подвески с медальоном">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--girl">
-            <picture>
-              <img src="img/index/gallery-girl.jpg" width="399" height="412" alt="Девушка в крупных золотых серьгах с ракушками">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--bracelet">
-            <picture>
-              <img src="img/index/gallery-bracelet.jpg" width="230" height="230" alt="Женская рука с браслетом с крупным аметистом и кольцом">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--set">
-            <picture>
-              <img src="img/index/gallery-set.jpg" width="230" height="150" alt="Комплект, состоящий из цепи с кулоном, сережек и браслета">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--round">
-            <picture>
-              <img src="img/index/gallery-round-earrings.jpg" width="230" height="230" alt="Серьги кольца из золота">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--rings">
-            <picture>
-              <img src="img/index/gallery-rings.jpg" width="230" height="150" alt="Руки, унизанные кольцами">
-            </picture>
-          </li>
-        </ul>
+      <h2>@Chjewellery</h2>
+      <a>Follow Us</a>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item--earrings">
+          <picture>
+            <img src="img/index/gallery-earrings.jpg" width="230" height="230" alt="Золотые серьги в форме квадратов">
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item--medallion">
+          <picture>
+            <img src="img/index/gallery-medallion.jpg" width="230" height="150" alt="Золотые подвески с медальоном">
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item--girl">
+          <picture>
+            <img src="img/index/gallery-girl.jpg" width="399" height="412"
+              alt="Девушка в крупных золотых серьгах с ракушками">
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item--bracelet">
+          <picture>
+            <img src="img/index/gallery-bracelet.jpg" width="230" height="230"
+              alt="Женская рука с браслетом с крупным аметистом и кольцом">
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item--set">
+          <picture>
+            <img src="img/index/gallery-set.jpg" width="230" height="150"
+              alt="Комплект, состоящий из цепи с кулоном, сережек и браслета">
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item--round">
+          <picture>
+            <img src="img/index/gallery-round-earrings.jpg" width="230" height="230" alt="Серьги кольца из золота">
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item--rings">
+          <picture>
+            <img src="img/index/gallery-rings.jpg" width="230" height="150" alt="Руки, унизанные кольцами">
+          </picture>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-    <section class="footer__subscription subscription">
-    <h2>The good stuff in your inbox </h2>
-    <p>News and updates from CH. No spam, we promise.</p>
-    <form>
-      <label for="email">
-        <input type="email" id="email" name="email" placeholder="Your E-mail">
-      </label>
-      <div>
-      <button>Sign Up</button>
-      <svg width="29" height="9">
-        <use xlink:href="img/all-pages/sprite.svg#arrow"></use>
-      </svg>
+        <section class="footer__subscription subscription">
+          <h2>The good stuff in your inbox </h2>
+          <p>News and updates from CH. No spam, we promise.</p>
+          <form>
+            <label for="email">
+              <input type="email" id="email" name="email" placeholder="Your E-mail">
+            </label>
+            <div>
+              <button type="submit">Sign Up</button>
+              <svg width="29" height="9">
+                <use xlink:href="img/all-pages/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </form>
+        </section>
+        <section class="footer__info info">
+          <ul class="info__list">
+            <li>Ordering & Payment</li>
+            <li>Terms & Conditions</li>
+            <li>Returns & Exchanges</li>
+            <li>Delivery</li>
+            <li>About CH</li>
+            <li>Stores & Hours</li>
+            <li>Jobs</li>
+            <li>Contact Us</li>
+          </ul>
+        </section>
+        <section class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/ch"
+                aria-label="Ссылка на Фэйсбук CH">
+                <svg class="social-picture" width="8" height="15">
+                  <use xlink:href="img/all-pages/sprite.svg#facebook"></use>
+                </svg>
+                <p>Facebook</p>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="https://www.instagram.com/ch"
+                aria-label="Ссылка на Инстаграм CH">
+                <svg class="social-picture" width="15" height="15">
+                  <use xlink:href="img/all-pages/sprite.svg#insta"></use>
+                </svg>
+                <p>Instagram</p>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="https://www.pinterest.com/ch"
+                aria-label="Ссылка на Пинтерест CH">
+                <svg class="social-picture" width="15" height="15">
+                  <use xlink:href="img/all-pages/sprite.svg#pinterest"></use>
+                </svg>
+                <p>Pinterest</p>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/ch"
+                aria-label="Ссылка на Твиттер CH">
+                <svg class="social-picture" width="15" height="13">
+                  <use xlink:href="img/all-pages/sprite.svg#twitter"></use>
+                </svg>
+                <p>Twitter</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
-    </form>
-  </section>
-  <section class="footer__info info">
-<ul class="info__list">
-  <li>Ordering & Payment</li>
-  <li>Terms & Conditions</li>
-  <li>Returns & Exchanges</li>
-  <li>Delivery</li>
-  <li>About CH</li>
-  <li>Stores & Hours</li>
-  <li>Jobs</li>
-  <li>Contact Us</li>
-</ul>
-  </section>
-  <section class="footer__social social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/ch"
-          aria-label="Ссылка на Фэйсбук CH">
-          <svg class="social-picture" width="8" height="15">
-            <use xlink:href="img/all-pages/sprite.svg#facebook"></use>
-          </svg>
-          <p>Facebook</p>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--insta" href="https://www.instagram.com/ch"
-          aria-label="Ссылка на Инстаграм CH">
-          <svg class="social-picture" width="15" height="15">
-            <use xlink:href="img/all-pages/sprite.svg#insta"></use>
-          </svg>
-          <p>Instagram</p>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--pinterest" href="https://www.pinterest.com/ch"
-          aria-label="Ссылка на Пинтерест CH">
-          <svg class="social-picture" width="15" height="15">
-            <use xlink:href="img/all-pages/sprite.svg#pinterest"></use>
-          </svg>
-          <p>Pinterest</p>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://www.twitter.com/ch"
-          aria-label="Ссылка на Твиттер CH">
-          <svg class="social-picture" width="15" height="13">
-            <use xlink:href="img/all-pages/sprite.svg#twitter"></use>
-          </svg>
-          <p>Twitter</p>
-        </a>
-      </li>
-    </ul>
-  </section>
-</div>
-</div>
   </footer>
+  <section class="modal">
+    <div class="modal__inner">
+      <button class="modal__close-button close-button" aria-label="Закрыть форму"></button>
+      <h2>Log In</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get" aria-modal="true">
+        <label for="email" aria-label="Поле для ввода электронной почты">
+          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+        </label>
+        <label for="password" aria-label="Поле для ввода пароля">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        </label>
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+        <div class="modal__wrapper">
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </section>
 </body>

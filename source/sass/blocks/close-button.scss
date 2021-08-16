@@ -1,0 +1,32 @@
+.close-button {
+  @include button-reset;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 14px;
+  height: 14px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: $font-color;
+    right: 0;
+    top: 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
