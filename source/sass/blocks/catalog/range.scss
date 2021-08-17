@@ -1,0 +1,71 @@
+.range {
+  height: 40px;
+}
+
+.range__scale {
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: $background-color;
+}
+
+.range__scale-active {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90px;
+  height: 1px;
+  background-color: $border-color;
+}
+
+.range__switch {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  transform: translate(0, -50%);
+
+  &--one {
+    top: 0;
+    left: 25%;
+  }
+
+  &--two {
+    top: 0;
+    right: 25%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: $border-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &--one::before {
+    top: 0;
+    left: 0;
+  }
+
+  &--two::before {
+    top: 0;
+    right: 0;
+  }
+}
+
+.range__text {
+  position: absolute;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  &--min {
+    left: 25%;
+  }
+
+  &--max {
+    right: 25%;
+  }
+}

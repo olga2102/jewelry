@@ -6,6 +6,10 @@
 
 .catalog__swiper {
   width: 76%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .catalog__list {
@@ -24,6 +28,22 @@
   &:nth-child(3n) {
     margin-right: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 30.3%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .catalog__list h3,
@@ -38,4 +58,109 @@
 
 .catalog__list img {
   margin: 0 auto 15px;
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    height: 208px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+    height: 136px;
+  }
+}
+
+.catalog__wrapper {
+  width: 21.8%;
+}
+
+.catalog__wrapper form {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.catalog__wrapper fieldset {
+  position: relative;
+  padding: 28px 25px 15px;
+  border: 1px solid $border-color;
+
+  &:not(:last-of-type) {
+    border-bottom: none;
+  }
+}
+
+.catalog__wrapper ul {
+  @include list-reset;
+}
+
+.catalog__wrapper li {
+  margin-bottom: 18px;
+  margin-left: 10px;
+}
+
+.catalog__wrapper h3 {
+  margin: 0 0 30px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.catalog__wrapper label {
+  position: relative;
+  padding-left: 25px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.catalog__wrapper input + label::before {
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: 1px solid $border-color;
+}
+
+.catalog__wrapper input:checked + label::before {
+  background-color: $border-color;
+}
+
+.catalog__wrapper button {
+  @include button-reset;
+  padding: 18px 15px;
+  margin-top: 35px;
+  width: 100%;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border: 1px solid $border-color;
+  background-color: $border-color;
+}
+
+.catalog__wrapper button + button {
+  color: $font-color;
+  background-color: white;
+}
+
+.catalog__filter-link {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    padding: 18px 15px;
+    margin-bottom: 78px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: $border-color;
+  }
 }

@@ -77,74 +77,78 @@
     </section>
     <section class="catalog container">
       <h2 class="visually-hidden">Catalog</h2>
-      <form class="catalog__filter filter">
-        <fieldset>
-          <button>Product</button>
-          <ul>
-            <li>
-              <input type="checkbox" id="necklaces" name="necklaces" checked>
-              <label for="necklaces">Necklaces</label>
-            </li>
-            <li>
-              <input type="checkbox" id="chokers" name="chokers" checked>
-              <label for="chokers">Chokers</label>
-            </li>
-            <li>
-              <input type="checkbox" id="rings" name="rings">
-              <label for="rings">Rings</label>
-            </li>
-            <li>
-              <input type="checkbox" id="earrings" name="earrings" checked>
-              <label for="earrings">Earrings</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <button>Material</button>
-          <ul>
-            <li>
-              <input type="checkbox" id="gold" name="gold" checked>
-              <label for="gold">Gold</label>
-            </li>
-            <li>
-              <input type="checkbox" id="silver" name="silver">
-              <label for="silver">Silver</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <button>Collection</button>
-          <ul>
-            <li>
-              <input type="checkbox" id="flamingo" name="flamingo">
-              <label for="flamingo">Pink flamingo</label>
-            </li>
-            <li>
-              <input type="checkbox" id="dreams" name="dreams">
-              <label for="dreams">Dreams</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <button>Price</button>
-          <div class="form__inner" tabindex="0">
-            <p class="form__text">$ 55</p>
-          <div class="form__range range">
-            <div class="range__switch range__switch--one" tabindex="0" aria-label="Уменьшить площадь квартиры">
-            </div>
-            <div class="range__switch range__switch--two" tabindex="0" aria-label="Увеличить площадь квартиры">
+      <a class="catalog__filter-link" href="filter.html">Filter</a>
+      <div class="catalog__wrapper">
+        <form class="catalog__filter filter">
+          <fieldset>
+            <h3>Product</h3>
+            <ul>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="necklaces" name="necklaces" checked>
+                <label for="necklaces">Necklaces</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="chokers" name="chokers" checked>
+                <label for="chokers">Chokers</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="rings" name="rings">
+                <label for="rings">Rings</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="earrings" name="earrings" checked>
+                <label for="earrings">Earrings</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Material</h3>
+            <ul>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="gold" name="gold" checked>
+                <label for="gold">Gold</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="silver" name="silver">
+                <label for="silver">Silver</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Collection</h3>
+            <ul>
+              <li>
+                <input class="visually-hidden catalog__input" type="checkbox" id="flamingo" name="flamingo">
+                <label class="catalog__label" for="flamingo">Pink flamingo</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" id="dreams" name="dreams">
+                <label for="dreams">Dreams</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Price</h3>
+            <div class="range">
+            <div class="range__scale">
+              <div class="range__scale-active"></div>
+              <div class="range__switch range__switch--one" tabindex="0" aria-label="Уменьшить площадь квартиры">
+              </div>
+              <div class="range__switch range__switch--two" tabindex="0" aria-label="Увеличить площадь квартиры">
+              </div>
+              <p class="range__text range__text--min">$ 55</p>
+              <p class="range__text range__text--max">$ 155</p>
             </div>
           </div>
-          <p class="form__text">$ 155</p>
-          </div>
-        </fieldset>
-        <button type="submit">Apply</button>
-        <button type="reset">Clear All</button>
-      </form>
+          </fieldset>
+          <button type="submit">Apply</button>
+          <button type="reset">Clear All</button>
+        </form>
+      </div>
       <div class="catalog__swiper swiper-container">
         <ul class="catalog__list swiper-wrapper">
           <li class="catalog__item swiper-slide">
-            <a class="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="product-card.html">
               <img class="catalog__img" src="img/catalog/earrings-pearl.jpg" width="270" height="272"
                 alt="Серьги с жемчугом">
               <h3>Double pearl earrings</h3>
@@ -152,7 +156,7 @@
             </a>
           </li>
           <li class="catalog__item swiper-slide">
-            <a class="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="product-card.html">
               <img class="catalog__img" src="img/catalog/choker-gold-bead.jpg" width="270" height="272"
                 alt="Черный чокер с золотой подвеской">
               <h3>Choker with gold bead</h3>
@@ -160,7 +164,7 @@
             </a>
           </li>
           <li class="catalog__item swiper-slide">
-            <a class="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="product-card.html">
               <img class="catalog__img" src="img/catalog/gold-layered-necklace.jpg" width="270" height="272"
                 alt="Ожерелье из нескольких золотых цепей">
               <h3>Gold layered necklace</h3>
