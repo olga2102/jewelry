@@ -66,6 +66,10 @@
   flex-direction: column;
   justify-content: center;
   align-self: center;
+
+  &::before {
+    display: none;
+  }
 }
 
 .new__list img {
