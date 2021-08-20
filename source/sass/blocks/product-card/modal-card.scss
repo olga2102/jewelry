@@ -1,0 +1,202 @@
+.modal-card {
+  // display: none;
+  // position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $grey-opacity;
+  z-index: 10;
+  overflow-y: scroll;
+
+  &--opened {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.modal-card__inner {
+  position: relative;
+  width: 500px;
+  min-height: 439px;
+  padding: 55px 30px 45px;
+  margin: 15% auto 0;
+  background-color: white;
+  z-index: 11;
+
+  @media (max-width: $mobile-width) {
+    padding: 45px 15px 45px;
+    width: 100%;
+    min-height: 519px;
+  }
+}
+
+.modal-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 60px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 50px;
+  }
+}
+
+.modal-card__wrapper img {
+  margin: 0 20px 0 0;
+
+  @media (max-width: $mobile-width) {
+    width: 70px;
+    height: 63px;
+  }
+}
+
+.modal-card h2 {
+  margin: 0 0 55px;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 40px;
+    font-size: 24px;
+  }
+}
+
+.modal-card__details h3 {
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.modal-card__details p {
+  margin: 0 0 20px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 18px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.modal-card__counter {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.modal-card input {
+  margin-bottom: 20px;
+  width: 30px;
+  height: 12px;
+  color: $font-color;
+  background-color: transparent;
+  border: none;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+.modal-card__total {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.modal-card__total p {
+  display: inline-block;
+  margin: 0 0 40px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 20px;
+  }
+}
+
+.modal-card__link {
+  @include button-reset;
+  padding: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  width: 50%;
+  background-color: $border-color;
+  border: 1px solid $border-color;
+
+  &--continue {
+    background-color: white;
+    color: $font-color;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.modal-card__button {
+  @include button-reset;
+  position: relative;
+  margin-bottom: 20px;
+  width: 14px;
+  height: 14px;
+
+  &::before {
+    position: absolute;
+    content: "";
+  }
+
+  &--plus::before,
+  &--minus::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: $time-color;
+    right: 0;
+    top: 50%;
+  }
+
+  &--plus::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: $time-color;
+    right: 0;
+    top: 50%;
+    transform: rotate(90deg);
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.modal-card__close-button {
+  top: 20px;
+  right: 20px;
+}
