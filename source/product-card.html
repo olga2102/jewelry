@@ -8,15 +8,17 @@
   <title>Каталог ювелирных украшений</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="cormorant-garamond-v10-latin-600.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="cormorant-garamond-v10-latin-italic.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="poppins-v15-latin-500.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="poppins-v15-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="poppins-v15-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/poppins-v15-latin-500.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/poppins-v15-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/poppins-v15-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="page__body">
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
@@ -26,7 +28,7 @@
             <input type="search" name="search" id="search" placeholder="Type here to search">
           </label>
         </form>
-        <a class="header__logo logo">
+        <a class="header__logo logo" href="index.html">
           <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
             alt="Логотип ювелирного магазина CH">
         </a>
@@ -109,7 +111,7 @@
               <dd>18” / 20”</dd>
             </dl>
           </div>
-          <button>Add to cart</button>
+          <button class="card__button">Add to cart</button>
           <div class="card__info">
             <p>14 Day Returns</p>
             <p>2-Year Warranty</p>
@@ -263,6 +265,7 @@
       </div>
     </div>
   </section>
+  <script src="js/card.js"></script>
 </body>
 
 </html>

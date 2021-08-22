@@ -17,16 +17,24 @@
     width: 14px;
     height: 2px;
     background-color: $font-color;
-    right: 0;
-    top: 50%;
   }
 
   &::before {
-    transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
     box-shadow: none;
   }
 
   &::after {
-    transform: rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &--black {
+    background-color: $font-color;
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      background-color: white;
+    }
   }
 }
