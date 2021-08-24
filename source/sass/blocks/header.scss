@@ -3,6 +3,10 @@
 
   @media (max-width: $tablet-width) {
     padding: 30px 0 30px;
+
+    &--bg {
+      background-color: $border-color;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -15,6 +19,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header__inner {
@@ -25,6 +30,13 @@
 
 .header__wrapper input {
   border: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 40px;
+    background-color: $opacity-white;
+    border-radius: 21px;
+  }
 }
 
 .header__wrapper label {
@@ -41,6 +53,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: translate(-50%, 25%);
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 0;
+    left: 20px;
+    background-image: url("../img/all-pages/loupe-white.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-50%, 25%);
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 
@@ -51,40 +85,53 @@
   font-size: 14px;
   line-height: 21px;
   color: $placeholder-color;
+
+  @media (max-width: $tablet-width) {
+    color: transparent;
+  }
 }
 
-.header__link {
+.header__card {
+  @media (max-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 16px;
+      top: 0;
+      left: -25px;
+      background-image: url("../img/all-pages/box.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translate(-50%, 25%);
+    }
+
+    &--opened::before {
+      background-image: url("../img/all-pages/box-white.svg");
+    }
+  }
+}
+
+.header__login {
   &:not(:last-child) {
     margin-right: 35px;
   }
 
-  &--login {
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
+  @media (max-width: $tablet-width) {
+    display: none;
 
-  &--card {
-    @media (max-width: $tablet-width) {
-      position: relative;
-
-      &::before {
-        position: absolute;
-        content: "";
-        width: 18px;
-        height: 16px;
-        top: 0;
-        left: -25px;
-        background-image: url("../img/all-pages/box.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        transform: translate(-50%, 25%);
-      }
+    &--opened {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
 }
 
-.header__link-text {
+.header__login-text {
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -97,10 +144,19 @@
       display: none;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 130%;
+    color: white;
+  }
 }
 
 .header__wrapper form {
   @media (max-width: $tablet-width) {
-    display: none;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 0;
   }
 }

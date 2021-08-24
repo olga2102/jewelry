@@ -28,6 +28,7 @@
 }
 
 .question__list h3 {
+  position: relative;
   margin: 0 0 20px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -39,9 +40,26 @@
     font-size: 16px;
     line-height: 140%;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 7px;
+    height: 7px;
+    border-left: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    cursor: pointer;
+  }
+
+  &--opened::before {
+    transform: rotate(135deg);
+  }
 }
 
-.question__list p {
+.question__text {
   margin: 0 0 20px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -51,5 +69,9 @@
     margin: 0 0 10px;
     font-size: 14px;
     line-height: 140%;
+  }
+
+  &--closed {
+    display: none;
   }
 }

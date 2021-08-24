@@ -51,7 +51,6 @@
 .blog__item {
   display: flex;
   background-repeat: no-repeat;
-  background-position-x: center;
 
   @media (max-width: $tablet-width) {
     &:not(:last-child) {

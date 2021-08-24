@@ -35,32 +35,50 @@
     padding-bottom: 20px;
   }
 
-  // Кнопка при открытом состоянии меню
   &--open {
-    display: none;
-
     @media (max-width: $tablet-width) {
       display: flex;
 
-      &::before,
       &::after {
         content: "";
-        position: absolute;
-        width: 30px;
+        width: 25px;
         height: 2px;
-        background-color: $basic-white;
-        right: 25%;
-        top: 50%;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-        box-shadow: none;
-      }
-
-      &::after {
-        transform: rotate(-45deg);
+        position: absolute;
+        top: 35%;
+        right: 50%;
+        transform: translate(50%, 0);
+        background-color: white;
+        box-shadow: 0 10px 0 0 white, 0 20px 0 0 white;
       }
     }
   }
+
+  // Кнопка при открытом состоянии меню
+  // &--open {
+  //   display: none;
+
+  //   @media (max-width: $tablet-width) {
+  //     display: flex;
+
+  //     &::before,
+  //     &::after {
+  //       content: "";
+  //       position: absolute;
+  //       width: 30px;
+  //       height: 2px;
+  //       background-color: $basic-white;
+  //       right: 25%;
+  //       top: 50%;
+  //     }
+
+  //     &::before {
+  //       transform: rotate(45deg);
+  //       box-shadow: none;
+  //     }
+
+  //     &::after {
+  //       transform: rotate(-45deg);
+  //     }
+  //   }
+  // }
 }

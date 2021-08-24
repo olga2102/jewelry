@@ -17,10 +17,10 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header--bg">
     <div class="container">
       <div class="header__wrapper">
-        <button class="toggle toggle--close" type="button" aria-label="Переключение меню"></button>
+        <button class="toggle toggle--open" type="button" aria-label="Переключение меню"></button>
         <form>
           <label for="search">
             <input type="search" name="search" id="search" placeholder="Type here to search">
@@ -31,14 +31,14 @@
             alt="Логотип ювелирного магазина CH">
         </a>
         <div class="header__inner">
-          <a class="header__link header__link--login" href="#login">
-            <p class="header__link-text">Login</p>
+          <a class="header__login header__login--opened" href="#login">
+            <p class="header__login-text">Login</p>
           </a>
-          <a class="header__link header__link--card" href="#cart">
-            <p class="header__link-text header__link-text--card">Cart 0</p>
+          <a class="header__card header__card--opened" href="#cart">
+            <p class="header__login-text header__login-text--card">Cart 0</p>
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list main-nav__list--open">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
@@ -66,6 +66,17 @@
               </a>
             </li>
           </ul>
+          <ul class="main-nav__list main-nav__list--tablet">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--tablet">About CH</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--tablet">Stores & Hours</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--tablet">Contact Us</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -89,7 +100,7 @@
             </a>
           </li>
           <li class="new__item swiper-slide">
-            <a class="new__item-link"  href="product-card.html">
+            <a class="new__item-link" href="product-card.html">
               <img class="new__img" src="img/index/choker.jpg" width="270" height="284"
                 alt="Чокер с серебряной подвеской в виде треугольника">
               <h3>Layered сhoker</h3>
@@ -97,7 +108,7 @@
             </a>
           </li>
           <li class="new__item swiper-slide">
-            <a class="new__item-link"  href="product-card.html">
+            <a class="new__item-link" href="product-card.html">
               <img class="new__img" src="img/index/chain.jpg" width="270" height="284"
                 alt="Золотая цепочка из нескольких цепей с медальоном">
               <h3>Gold chain</h3>
@@ -105,7 +116,7 @@
             </a>
           </li>
           <li class="new__item swiper-slide">
-            <a class="new__item-link"  href="product-card.html">
+            <a class="new__item-link" href="product-card.html">
               <img class="new__img" src="img/index/earrings.jpg" width="270" height="284"
                 alt="Золотая цепочка из нескольких цепей с медальоном">
               <h3>Galaxy earrings</h3>
@@ -149,23 +160,27 @@
       <h2>Frequently asked questions</h2>
       <ul class="question__list">
         <li>
-          <h3>What materials are the jewellery made of?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+          <h3 class="question__title">What materials are the jewellery made of?</h3>
+          <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+            contains precious and
             semiprecious stones and crystals.</p>
         </li>
         <li>
           <h3>Which countries do you deliver to?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+          <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+            contains precious and
             semiprecious stones and crystals.</p>
         </li>
         <li>
           <h3>What are the payment methods?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+          <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+            contains precious and
             semiprecious stones and crystals.</p>
         </li>
         <li>
           <h3>Can I return the jewellery if it didn’t fit me?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+          <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+            contains precious and
             semiprecious stones and crystals.</p>
         </li>
       </ul>
@@ -309,5 +324,7 @@
     </div>
   </section>
   <script src="js/login.js"></script>
+  <script src="js/faq.js"></script>
 </body>
+
 </html>
