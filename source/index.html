@@ -27,8 +27,11 @@
           </label>
         </form>
         <a class="header__logo logo">
-          <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
-            alt="Логотип ювелирного магазина CH">
+          <!-- <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
+            alt="Логотип ювелирного магазина CH"> -->
+            <svg class="logo__img" width="66" height="66">
+              <use xlink:href="img/all-pages/sprite.svg#logo"></use>
+            </svg>
         </a>
         <div class="header__inner">
           <a class="header__login header__login--opened" href="#login">
@@ -159,26 +162,26 @@
     <section class="question container">
       <h2>Frequently asked questions</h2>
       <ul class="question__list">
-        <li>
+        <li class="question__item">
           <h3 class="question__title">What materials are the jewellery made of?</h3>
           <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
             contains precious and
             semiprecious stones and crystals.</p>
         </li>
-        <li>
-          <h3>Which countries do you deliver to?</h3>
+        <li class="question__item">
+          <h3 class="question__title">Which countries do you deliver to?</h3>
           <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
             contains precious and
             semiprecious stones and crystals.</p>
         </li>
-        <li>
-          <h3>What are the payment methods?</h3>
+        <li class="question__item">
+          <h3 class="question__title">What are the payment methods?</h3>
           <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
             contains precious and
             semiprecious stones and crystals.</p>
         </li>
-        <li>
-          <h3>Can I return the jewellery if it didn’t fit me?</h3>
+        <li class="question__item">
+          <h3 class="question__title">Can I return the jewellery if it didn’t fit me?</h3>
           <p class="question__text">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
             contains precious and
             semiprecious stones and crystals.</p>
@@ -323,6 +326,7 @@
       </form>
     </div>
   </section>
+  <script src="js/menu.js"></script>
   <script src="js/login.js"></script>
   <script src="js/faq.js"></script>
 </body>

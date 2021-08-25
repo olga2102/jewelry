@@ -3,11 +3,14 @@
   margin-top: 35px;
 
   @media (max-width: $tablet-width) {
+    display:none;
+    
     &--closed {
       display: none;
     }
 
     &--opened {
+      display: block;
       margin-top: 85px;
       background-color: $border-color;
       padding-bottom: 135px;

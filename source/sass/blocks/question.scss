@@ -14,7 +14,7 @@
   @include list-reset;
 }
 
-.question__list li {
+.question__item {
   border: 1px solid $border-color;
   padding: 50px 38px;
 
@@ -25,9 +25,13 @@
   @media (max-width: $mobile-width) {
     padding: 25px 25px 15px;
   }
+
+  &--closed p {
+    display: none;
+  }
 }
 
-.question__list h3 {
+.question__title {
   position: relative;
   margin: 0 0 20px;
   font-family: "Poppins", "Arial", sans-serif;
@@ -71,7 +75,7 @@
     line-height: 140%;
   }
 
-  &--closed {
-    display: none;
-  }
+  // &--closed {
+  //   display: none;
+  // }
 }

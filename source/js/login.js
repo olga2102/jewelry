@@ -1,5 +1,5 @@
 const modal = document.querySelector(".modal");
-const loginLink = document.querySelector(".header__link--login");
+const loginLink = document.querySelector(".header__login");
 const closeButton = document.querySelector(".modal__close-button");
 const body =  document.querySelector(".page__body");
 const userEmail = document.querySelector("#email");
