@@ -1,5 +1,6 @@
 .new {
   overflow: hidden;
+  min-width: 0;
   margin-bottom: 130px;
   text-align: center;
 }
@@ -40,6 +41,7 @@
 }
 
 .new__swiper {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -47,11 +49,12 @@
   @include list-reset;
   margin: 0 auto;
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .new__item {
   flex-shrink: 0;
+  width: 23%;
 
   &:not(:last-child) {
     margin-right: 30px;

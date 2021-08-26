@@ -14,6 +14,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 80px;
   }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/index/bg-mobile.jpg");
+  }
 }
 
 .intro__title {

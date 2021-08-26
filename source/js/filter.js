@@ -2,8 +2,9 @@ const filter= document.querySelector(".catalog__wrapper");
 const catalogLink = document.querySelector(".catalog__filter-link");
 const closeButton = document.querySelector(".close-button");
 const body =  document.querySelector(".page__body");
-// const forms = document.querySelectorAll("form");
-console.log(closeButton);
+const filters = document.querySelectorAll(".catalog__wrapper fieldset");
+const tools = document.querySelectorAll(".catalog__wrapper li");
+
 
 const removeClass = () => {
   filter.classList.remove("catalog__wrapper--opened");
@@ -44,4 +45,41 @@ filter.addEventListener("click", (evt) => {
   if (currentClass) {
     removeClass();
   }
+});
+
+
+// const addHandler = (evt) => {
+//   console.log(evt.currentTarget);
+//   if(evt.currentTarget.style.display === "none") {
+//     evt.currentTarget.style.display === "block";
+//   } else {
+//     evt.currentTarget.style.display === "none";
+//   }
+// }
+
+
+//   faqItems.forEach(item => {
+//     if (!item.classList.contains("question__item--closed")) {
+//       item.classList.add("question__item--closed");
+//       evt.currentTarget.classList.remove("question__item--closed");
+//       item.firstElementChild.classList.remove("question__title--opened");
+//       evt.currentTarget.firstElementChild.classList.add("question__title--opened");
+//     }
+//   });
+// };
+
+
+filters.forEach(item => {
+  tools.forEach(tool => {
+    tool.style.display = "none";
+    item.addEventListener('click', (evt)=> {
+      console.log(evt.currentTarget);
+    if(evt.currentTarget.style.display === "none") {
+      evt.currentTarget.style.display === "block";
+    } else {
+      evt.currentTarget.style.display === "none";
+    }
+    });
+  })
+
 });

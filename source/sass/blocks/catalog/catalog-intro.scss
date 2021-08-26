@@ -1,17 +1,20 @@
-.intro {
+.catalog-intro {
+  min-height: 261px;
+  padding: 78px 0;
+  margin-bottom: 60px;
   background-image: url("../img/catalog/catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.intro h2 {
-  margin: 78px 0 20px;
+.catalog-intro h2 {
+  margin: 0 0 20px;
   font-weight: bold;
   font-size: 34px;
   text-align: center;
 }
 
-.intro p {
+.catalog-intro p {
   margin: 0 0 20px;
   font-style: italic;
   font-weight: 500;
