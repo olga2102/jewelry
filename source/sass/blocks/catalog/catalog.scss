@@ -3,9 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
+  min-width: 0;
 }
 
 .catalog__swiper {
+  position: relative;
   width: 76%;
 
   @media (max-width: $tablet-width) {
@@ -167,6 +169,7 @@
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  user-select: none;
 
   &::before {
     position: absolute;
@@ -255,5 +258,12 @@
     margin: 11px 11px;
     background-color: $font-color;
     z-index: 12;
+  }
+}
+
+.catalog__fieldset {
+  &--closed ul,
+  &--closed div {
+    display: none;
   }
 }

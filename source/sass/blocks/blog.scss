@@ -53,6 +53,8 @@
   background-repeat: no-repeat;
 
   @media (max-width: $tablet-width) {
+    background-color: $background-color;
+
     &:not(:last-child) {
       margin-bottom: 50px;
     }

@@ -145,7 +145,7 @@
 
 .card__wrapper li {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 5%;
     margin-bottom: 30px;
 
     @media (max-width: $tablet-width) {
@@ -184,8 +184,11 @@
 }
 
 .card__item--main {
+  width: 77%;
+
   @media (max-width: $tablet-width) {
     order: -1;
+    width: 100%;
     margin-bottom: 14px;
   }
 }

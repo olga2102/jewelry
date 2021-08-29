@@ -28,11 +28,9 @@
           </label>
         </form>
         <a class="header__logo logo">
-          <!-- <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
-            alt="Логотип ювелирного магазина CH"> -->
-            <svg class="logo__img" width="66" height="66">
-              <use xlink:href="img/all-pages/sprite.svg#logo"></use>
-            </svg>
+          <svg class="logo__img" width="66" height="66">
+            <use xlink:href="img/all-pages/sprite.svg#logo"></use>
+          </svg>
         </a>
         <div class="header__inner">
           <a class="header__login header__login--opened" href="#login">
@@ -86,6 +84,7 @@
     </div>
   </header>
   <main>
+    <h1 class="visually-hidden">Ювелирные украшения CH</h1>
     <section class="intro">
       <h2 class="intro__title">PERFECTION</h2>
       <p class="intro__slogan">made to be yours</p>
@@ -97,32 +96,48 @@
         <ul class="new__list swiper-wrapper">
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="product-card.html">
-              <img class="new__img" src="img/index/necklace.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="index/necklace.webp 1x, img/index/necklace@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/necklace.jpg" srcset="img/index/necklace@2x.jpg" width="270" height="284"
                 alt="Серебряное ожерелье с аметистом">
+                </picture>
               <h3>Necklace with amethyst</h3>
               <p>$ 145</p>
             </a>
           </li>
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="product-card.html">
-              <img class="new__img" src="img/index/choker.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="index/choker.webp 1x, img/index/choker@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/choker.jpg" srcset="img/index/choker@2x.jpg" width="270" height="284"
                 alt="Чокер с серебряной подвеской в виде треугольника">
+              </picture>
               <h3>Layered сhoker</h3>
               <p>$ 115</p>
             </a>
           </li>
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="product-card.html">
-              <img class="new__img" src="img/index/chain.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="index/index/chain.webp 1x, img/index/chain@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/chain.jpg" srcset="img/index/chain@2x.jpg" width="270" height="284"
                 alt="Золотая цепочка из нескольких цепей с медальоном">
+              </picture>
               <h3>Gold chain</h3>
               <p>$ 215</p>
             </a>
           </li>
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="product-card.html">
-              <img class="new__img" src="img/index/earrings.jpg" width="270" height="284"
-                alt="Золотая цепочка из нескольких цепей с медальоном">
+              <picture>
+                <source type="image/webp" srcset="index/earrings.webp 1x, img/index/earrings@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+                <img class="new__img" src="img/index/earrings.jpg" src="img/index/earrings@2x.jpg" width="270"
+                  height="284" alt="Золотая цепочка из нескольких цепей с медальоном">
+              </picture>
               <h3>Galaxy earrings</h3>
               <p>$ 95</p>
             </a>
@@ -135,27 +150,27 @@
     </section>
     <section class="blog container">
       <h2>Blog</h2>
-      <a>Read All</a>
+      <a href="#">Read All</a>
       <ul class="blog__list">
         <li class="blog__item blog__item--care">
           <div>
             <time datetime="2019-09-30">September 30, 2019</time>
             <h3>How to care for your jewellery</h3>
-            <a>Read Article</a>
+            <a href="#">Read Article</a>
           </div>
         </li>
         <li class="blog__item blog__item--crystal">
           <div>
             <time datetime="2019-09-23">September 23, 2019</time>
             <h3>Power of crystals</h3>
-            <a>Read Article</a>
+            <a href="#">Read Article</a>
           </div>
         </li>
         <li class="blog__item blog__item--trends">
           <div>
             <time datetime="2019-09-16">September 16, 2019</time>
             <h3>AW 19 trends</h3>
-            <a>Read Article</a>
+            <a href="#">Read Article</a>
           </div>
         </li>
       </ul>
@@ -191,44 +206,64 @@
     </section>
     <section class="gallery container">
       <h2>@Chjewellery</h2>
-      <a>Follow Us</a>
+      <a href="#">Follow Us</a>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--earrings">
           <picture>
-            <img src="img/index/gallery-earrings.jpg" width="230" height="230" alt="Золотые серьги в форме квадратов">
+            <source type="image/webp"
+              srcset="index/index/gallery-earrings.webp 1x, img/index/index/gallery-earrings@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-earrings.jpg" src="img/index/gallery-earrings@2x.jpg" width="230" height="230"
+              alt="Золотые серьги в форме квадратов">
           </picture>
         </li>
         <li class="gallery__item gallery__item--medallion">
           <picture>
-            <img src="img/index/gallery-medallion.jpg" width="230" height="150" alt="Золотые подвески с медальоном">
+            <source type="image/webp" srcset="index/gallery-medallion.webp 1x, img/index/gallery-medallion@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-medallion.jpg" src="img/index/gallery-medallion@2x.jpg" width="230" height="150"
+              alt="Золотые подвески с медальоном">
           </picture>
         </li>
         <li class="gallery__item gallery__item--girl">
           <picture>
-            <img src="img/index/gallery-girl.jpg" width="399" height="412"
+            <source type="image/webp" srcset="index/gallery-girl.webp 1x, img/index/gallery-girl@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-girl.jpg" src="img/index/gallery-girl@2x.jpg" width="399" height="412"
               alt="Девушка в крупных золотых серьгах с ракушками">
           </picture>
         </li>
         <li class="gallery__item gallery__item--bracelet">
           <picture>
-            <img src="img/index/gallery-bracelet.jpg" width="230" height="230"
-              alt="Женская рука с браслетом с крупным аметистом и кольцом">
+            <source type="image/webp" srcset="img/gallery-bracelet.webp 1x, img/gallery-bracelet@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-bracelet.jpg" srcset="img/index/gallery-bracelet@2x.jpg" width="230"
+              height="230" alt="Женская рука с браслетом с крупным аметистом и кольцом">
           </picture>
         </li>
         <li class="gallery__item gallery__item--set">
           <picture>
-            <img src="img/index/gallery-set.jpg" width="230" height="150"
+            <source type="image/webp" srcset="img/gallery-set.webp 1x, img/gallery-set@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-set.jpg" srcset="img/index/gallery-set@2x.jpg" width="230" height="150"
               alt="Комплект, состоящий из цепи с кулоном, сережек и браслета">
           </picture>
         </li>
         <li class="gallery__item gallery__item--round">
           <picture>
-            <img src="img/index/gallery-round-earrings.jpg" width="230" height="230" alt="Серьги кольца из золота">
+            <source type="image/webp"
+              srcset="img/gallery-round-earrings.webp 1x, img/gallery-round-earrings@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-round-earrings.jpg" srcset="img/index/gallery-round-earrings@2x.jpg" width="230"
+              height="230" alt="Серьги кольца из золота">
           </picture>
         </li>
         <li class="gallery__item gallery__item--rings">
           <picture>
-            <img src="img/index/gallery-rings.jpg" width="230" height="150" alt="Руки, унизанные кольцами">
+            <source type="image/webp" srcset="img/gallery-rings.webp 1x, img/gallery-rings@2x.webp 2x">
+            <!-- 1х: 230px/150px; 2x: 460px/300px -->
+            <img src="img/index/gallery-rings.jpg" srcset="img/index/gallery-rings@2x.jpg" width="230" height="150"
+              alt="Руки, унизанные кольцами">
           </picture>
         </li>
       </ul>
@@ -253,6 +288,7 @@
           </form>
         </section>
         <section class="footer__info info">
+          <h2 class="visually-hidden">Информация</h2>
           <ul class="info__list">
             <li>Ordering & Payment</li>
             <li>Terms & Conditions</li>
@@ -265,6 +301,7 @@
           </ul>
         </section>
         <section class="footer__social social">
+          <h2 class="visually-hidden">Социльные сети ювелирного салона</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/ch"
@@ -311,7 +348,7 @@
     <div class="modal__inner">
       <button class="modal__close-button close-button" aria-label="Закрыть форму"></button>
       <h2>Log In</h2>
-      <form action="https://echo.htmlacademy.ru/" method="get" aria-modal="true">
+      <form action="https://echo.htmlacademy.ru/" method="get">
         <label for="email" aria-label="Поле для ввода электронной почты">
           <input type="email" name="email" id="email" placeholder="Your E-mail" required>
         </label>
@@ -328,10 +365,9 @@
     </div>
   </section>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/login.js"></script>
-  <script src="js/faq.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/menu.js" type="module"></script>
+  <script src="js/faq.js" type="module"></script>
+  <script src="js/slider-index.js" type="module"></script>
 </body>
 
 </html>

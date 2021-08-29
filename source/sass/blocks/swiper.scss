@@ -43,6 +43,48 @@
   }
 }
 
+.swiper-container .swiper-catalog {
+  position: absolute;
+  width: 69px;
+  height: 12px;
+  background-color: $basic-white;
+  bottom: 0;
+  z-index: 2;
+
+  &--prev {
+    left: 0%;
+  }
+
+  &--next {
+    right: 0%;
+  }
+
+  &::before {
+    position: absolute;
+    width: 69px;
+    height: 21px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: $font-color;
+    cursor: pointer;
+  }
+
+  &--next::before {
+    content: "Next";
+  }
+
+  &--prev::before {
+    content: "Previous";
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 
 .swiper-button-prev {
   position: absolute;

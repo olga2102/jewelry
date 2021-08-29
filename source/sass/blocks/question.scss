@@ -38,6 +38,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  user-select: none;
 
   @media (max-width: $mobile-width) {
     margin: 0 0 25px;

@@ -16,31 +16,35 @@
   <link href="fonts/poppins-v15-latin-500.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header--bg">
     <div class="container">
       <div class="header__wrapper">
-        <button class="toggle toggle--close" type="button" aria-label="Переключение меню"></button>
+        <button class="toggle toggle--open" type="button" aria-label="Переключение меню"></button>
         <form>
           <label for="search">
             <input type="search" name="search" id="search" placeholder="Type here to search">
           </label>
         </form>
         <a class="header__logo logo" href="index.html">
-          <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
-            alt="Логотип ювелирного магазина CH">
+          <!-- <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
+            alt="Логотип ювелирного магазина CH"> -->
+            <svg class="logo__img" width="66" height="66">
+              <use xlink:href="img/all-pages/sprite.svg#logo"></use>
+            </svg>
         </a>
         <div class="header__inner">
-          <a class="header__link header__link--login" href="#login">
-            <p class="header__link-text">Login</p>
+          <a class="header__login header__login--opened" href="#login">
+            <p class="header__login-text">Login</p>
           </a>
-          <a class="header__link header__link--card" href="#cart">
-            <p class="header__link-text header__link-text--card">Cart 0</p>
+          <a class="header__card header__card--opened" href="#cart">
+            <p class="header__login-text header__login-text--card">Cart 0</p>
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list main-nav__list--open">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
@@ -68,26 +72,54 @@
               </a>
             </li>
           </ul>
+          <ul class="main-nav__list main-nav__list--tablet">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--tablet">About CH</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--tablet">Stores & Hours</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--tablet">Contact Us</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
   </header>
-
   <main>
+    <h1 class="visually-hidden">Ювелирные украшения CH</h1>
     <section class="card container">
+      <h2 class="visually-hidden">Карточка золотого ожерелья</h2>
       <div class="card__wrapper">
         <ul>
           <li>
-            <img class="card__img" src="img/product-card/gold-necklace-for-women.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/product-card/gold-necklace-for-women.webp 1x, img/product-card/gold-necklace-for-women@2x.webp 2x">
+              <!-- 1х: 100px/125px; 2x: 200px/250px -->
+            <img class="card__img" src="img/product-card/gold-necklace-for-women.jpg" srcset="img/product-card/gold-necklace-for-women@2x.jpg" width ="100" height="125" alt="Ожерелье с голубыми бусинами и золотыми подвесками на женщине в профиль">
+            </picture>
           </li>
           <li>
-            <img class="card__img" src="img/product-card/pretty-gold-necklace.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/product-card/pretty-gold-necklace.webp 1x, img/product-card/pretty-gold-necklace@2x.webp 2x">
+              <!-- 1х: 100px/125px; 2x: 200px/250px -->
+            <img class="card__img" src="img/product-card/pretty-gold-necklace.jpg" srcset="img/product-card/pretty-gold-necklace@2x.jpg" width ="100" height="125" alt="Ожерелье с голубыми бусинами и золотыми подвесками на сером фоне">
+          </picture>
           </li>
           <li>
-            <img class="card__img" src="img/product-card/womens-necklace-set.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/product-card/womens-necklace-set.webp 1x, img/product-card/womens-necklace-set@2x.webp 2x">
+              <!-- 1х: 100px/125px; 2x: 200px/250px -->
+            <img class="card__img" src="img/product-card/womens-necklace-set.jpg" srcset="img/product-card/womens-necklace-set@2x.jpg" width ="100" height="125" alt="Ожерелье с голубыми бусинами и золотыми подвесками на женщине анфас">
+            </picture>
           </li>
           <li class="card__item card__item--main">
-            <img class="card__img card__img--main" src="img/product-card/necklace-detail-main.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/product-card/necklace-detail-main.webp 1x, img/product-card/necklace-detail-main@2x.webp 2x">
+              <!-- 1х: 470px/435px; 2x: 940px/870px -->
+            <img class="card__img card__img--main" src="img/product-card/necklace-detail-main.jpg" srcset="img/product-card/necklace-detail-main@2x.jpg" width="470" height="435" alt="Ожерелье с голубыми бусинами и золотыми подвесками крупным планом">
+            </picture>
           </li>
         </ul>
       </div>
@@ -120,39 +152,55 @@
         </div>
       </div>
     </section>
-    <section class="gallery container">
+    <section class="new container">
       <h2>You May Also Like</h2>
-      <a>Shop Now</a>
+      <a href="#">Shop Now</a>
       <div class="new__swiper swiper-container">
         <ul class="new__list swiper-wrapper">
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
-              <img class="new__img" src="img/index/necklace.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="index/necklace.webp 1x, img/index/necklace@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/necklace.jpg" srcset="img/index/necklace@2x.jpg" width="270" height="284"
                 alt="Серебряное ожерелье с аметистом">
+                </picture>
               <h3>Necklace with amethyst</h3>
               <p>$ 145</p>
             </a>
           </li>
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
-              <img class="new__img" src="img/index/choker.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="index/choker.webp 1x, img/index/choker@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/choker.jpg" srcset="img/index/choker@2x.jpg" width="270" height="284"
                 alt="Чокер с серебряной подвеской в виде треугольника">
+              </picture>
               <h3>Layered сhoker</h3>
               <p>$ 115</p>
             </a>
           </li>
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
-              <img class="new__img" src="img/index/chain.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="index/index/chain.webp 1x, img/index/chain@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/chain.jpg" srcset="img/index/chain@2x.jpg" width="270" height="284"
                 alt="Золотая цепочка из нескольких цепей с медальоном">
+              </picture>
               <h3>Gold chain</h3>
               <p>$ 215</p>
             </a>
           </li>
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
-              <img class="new__img" src="img/index/earrings.jpg" width="270" height="284"
+              <picture>
+                <source type="image/webp" srcset="img/index/earrings.webp 1x, img/index/earrings@2x.webp 2x">
+                <!-- 1х: 270px/284px; 2x: 540px/568px -->
+              <img class="new__img" src="img/index/earrings.jpg" srcset="img/index/earrings@2x.jpg" width="270" height="284"
                 alt="Золотая цепочка из нескольких цепей с медальоном">
+              </picture>
               <h3>Galaxy earrings</h3>
               <p>$ 95</p>
             </a>
@@ -183,6 +231,7 @@
           </form>
         </section>
         <section class="footer__info info">
+          <h2 class="visually-hidden">Информация</h2>
           <ul class="info__list">
             <li>Ordering & Payment</li>
             <li>Terms & Conditions</li>
@@ -195,6 +244,7 @@
           </ul>
         </section>
         <section class="footer__social social">
+          <h2 class="visually-hidden">Социльные сети ювелирного салона</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/ch"
@@ -242,7 +292,11 @@
       <button class="modal-card__close-button close-button" aria-label="Закрыть форму"></button>
       <h2>The item was added to your cart</h2>
       <div class="modal-card__wrapper">
-        <img src="img/product-card/necklace-detail-main@2x.jpg" width="88" height="79">
+        <picture>
+          <source type="image/webp" srcset="img/product-card/necklace-detail-main.webp 1x, img/product-card/necklace-detail-main@2x.webp 2x">
+          <!-- 1х: 88px/79px; 2x: 176px/158px -->
+        <img src="img/product-card/necklace-detail-main.jpg" srcset="img/product-card/necklace-detail-main@2x.jpg" width="88" height="79" alt="Золотое ожерелье с голубыми камнями и золотыми подвесками">
+        </picture>
         <div class="modal-card__details">
           <h3>Gold Necklace </h3>
           <p>$ 115</p>
@@ -265,7 +319,10 @@
       </div>
     </div>
   </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/card.js"></script>
+  <script src="js/slider-index.js"></script>
 </body>
 
 </html>

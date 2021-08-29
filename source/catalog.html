@@ -16,63 +16,77 @@
   <link href="fonts/poppins-v15-latin-500.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <button class="toggle toggle--close" type="button" aria-label="Переключение меню"></button>
-        <form>
-          <label for="search">
-            <input type="search" name="search" id="search" placeholder="Type here to search">
-          </label>
-        </form>
-        <a class="header__logo logo" href="index.html">
-          <img class="logo__img" src="img/all-pages/logo.svg" width="66" height="66"
-            alt="Логотип ювелирного магазина CH">
-        </a>
-        <div class="header__inner">
-          <a class="header__link header__link--login" href="#login">
-            <p class="header__link-text">Login</p>
-          </a>
-          <a class="header__link header__link--card" href="#cart">
-            <p class="header__link-text header__link-text--card">Cart 0</p>
-          </a>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list main-nav__list--open">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                What’s new
+        <header class="header header--bg">
+          <div class="container">
+            <div class="header__wrapper">
+              <button class="toggle toggle--open" type="button" aria-label="Переключение меню"></button>
+              <form>
+                <label for="search">
+                  <input type="search" name="search" id="search" placeholder="Type here to search">
+                </label>
+              </form>
+              <a class="header__logo logo" href="index.html">
+                  <svg class="logo__img" width="66" height="66">
+                    <use xlink:href="img/all-pages/sprite.svg#logo"></use>
+                  </svg>
               </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Chokers
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Necklaces
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Rings
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Earrings
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+              <div class="header__inner">
+                <a class="header__login header__login--opened" href="#login">
+                  <p class="header__login-text">Login</p>
+                </a>
+                <a class="header__card header__card--opened" href="#cart">
+                  <p class="header__login-text header__login-text--card">Cart 0</p>
+                </a>
+              </div>
+              <nav class="main-nav main-nav--opened">
+                <ul class="main-nav__list main-nav__list--open">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">
+                      What’s new
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">
+                      Chokers
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">
+                      Necklaces
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">
+                      Rings
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">
+                      Earrings
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-nav__list main-nav__list--tablet">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link main-nav__link--tablet">About CH</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link main-nav__link--tablet">Stores & Hours</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link main-nav__link--tablet">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
   <main>
+    <h1 class="visually-hidden">Ювелирные украшения CH</h1>
     <section class="catalog-intro">
       <h2>ALL JEWELLERY</h2>
       <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
@@ -83,7 +97,7 @@
       <div class="catalog__wrapper">
         <form class="catalog__filter filter">
           <button class="catalog__close-button close-button close-button--black" aria-label="Закрыть форму"></button>
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <h3 class="catalog__title">Product</h3>
             <ul>
               <li>
@@ -104,7 +118,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <h3 class="catalog__title">Material</h3>
             <ul>
               <li>
@@ -117,7 +131,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <h3 class="catalog__title">Collection</h3>
             <ul>
               <li>
@@ -130,7 +144,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <h3 class="catalog__title">Price</h3>
             <div class="range">
             <div class="range__scale">
@@ -152,107 +166,154 @@
         <ul class="catalog__list swiper-wrapper">
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="product-card.html">
-              <img class="catalog__img" src="img/catalog/earrings-pearl.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/earrings-pearl.webp 1x, img/catalog/earrings-pearl@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/earrings-pearl.jpg" srcset="img/catalog/earrings-pearl@2x.jpg" width="270" height="272"
                 alt="Серьги с жемчугом">
+              </picture>
               <h3>Double pearl earrings</h3>
               <p>$ 55</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="product-card.html">
-              <img class="catalog__img" src="img/catalog/choker-gold-bead.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/choker-gold-bead.webp 1x, img/catalog/choker-gold-bead@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/choker-gold-bead.jpg" srcset="img/catalog/choker-gold-bead@2x.jpg" width="270" height="272"
                 alt="Черный чокер с золотой подвеской">
+              </picture>
               <h3>Choker with gold bead</h3>
               <p>$ 115</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="product-card.html">
-              <img class="catalog__img" src="img/catalog/gold-layered-necklace.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/gold-layered-necklace.webp 1x, img/catalog/gold-layered-necklace@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/gold-layered-necklace.jpg" srcset="img/catalog/gold-layered-necklace@2x.jpg" width="270" height="272"
                 alt="Ожерелье из нескольких золотых цепей">
+              </picture>
               <h3>Gold layered necklace</h3>
               <p>$ 155</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/blue-gemstone-pendant.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/blue-gemstone-pendant.webp 1x, img/catalog/blue-gemstone-pendant@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/blue-gemstone-pendant.jpg" srcset="img/catalog/blue-gemstone-pendant@2x.jpg" width="270" height="272"
                 alt="Серебряный кулон с бирюзой">
+              </picture>
               <h3>Blue gemstone pendant</h3>
               <p>$ 105</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/boho-earrings.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/boho-earrings.webp 1x, img/catalog/boho-earrings@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/boho-earrings.jpg" srcset="img/catalog/boho-earrings@2x.jpg" width="270" height="272"
                 alt="Серьги с шариками из бирюзы">
+                </picture>
               <h3>Boho earrings</h3>
               <p>$ 75</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/bird-necklace.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/bird-necklace.webp 1x, img/catalog/bird-necklace@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/bird-necklace.jpg" srcset="img/catalog/bird-necklace@2x.jpg" width="270" height="272"
                 alt="Цепочка с кулоном ы виде птицы">
+              </picture>
               <h3>Gold bird necklace</h3>
               <p>$ 135</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/leather-choker.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/leather-choker.webp 1x, img/catalog/leather-choker@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/leather-choker.jpg" srcset="img/catalog/leather-choker@2x.jpg" width="270" height="272"
                 alt="Черный кожаный чокер">
+              </picture>
               <h3>Black leather choker</h3>
               <p>$ 85</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/purple-gemstone-necklace.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/purple-gemstone-necklace.webp 1x, img/catalog/purple-gemstone-necklace@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/purple-gemstone-necklace.jpg" srcset="img/catalog/purple-gemstone-necklace@2x.jpg" width="270" height="272"
                 alt="Цепочка с кристаллом из аметиста">
+              </picture>
               <h3>Necklace with amethyst</h3>
               <p>$ 145</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/elephant-earrings.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/elephant-earrings.webp 1x, img/catalog/elephant-earrings@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/elephant-earrings.jpg" srcset="img/catalog/elephant-earrings@2x.jpg" width="270" height="272"
                 alt="Золотые серьги в форме слонов">
+              </picture>
               <h3>Elephant earrings</h3>
               <p>$ 95</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/threader-necklace-closeup.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/threader-necklace-closeup.webp 1x, img/catalog/threader-necklace-closeup@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/threader-necklace-closeup.jpg" srcset="img/catalog/threader-necklace-closeup@2x.jpg" width="270" height="272"
                 alt="Серебряное ожерелье с кулоном в виде круга">
+              </picture>
               <h3>Threader necklace</h3>
               <p>$ 115</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/origami-crane-necklace.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/origami-crane-necklace.webp 1x, img/catalog/origami-crane-necklace@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/origami-crane-necklace.jpg" srcset="img/catalog/origami-crane-necklace@2x.jpg" width="270" height="272"
                 alt="Ожерелье с кулоном в виде абстракции">
+                </picture>
               <h3>Origami crane necklace</h3>
               <p>$ 105</p>
             </a>
           </li>
           <li class="catalog__item swiper-slide">
             <a class="catalog__item-link" href="#">
-              <img class="catalog__img" src="img/catalog/marble-earrings.jpg" width="270" height="272"
+              <picture>
+                <source type="image/webp" srcset="img/catalog/marble-earrings.webp 1x, img/catalog/marble-earrings@2x.webp 2x">
+                <!-- 1х: 270px/272px; 2x: 540px/544px -->
+              <img class="catalog__img" src="img/catalog/marble-earrings.jpg" srcset="img/catalog/marble-earrings@2x.jpg" width="270" height="272"
                 alt="Серьги с мрамором">
+              </picture>
               <h3>Marble earrings</h3>
               <p>$ 95</p>
             </a>
           </li>
         </ul>
         <div class="swiper-pag"></div>
-        <div class="swiper swiper--prev"></div>
-        <div class="swiper swiper--next"></div>
+        <div class="swiper-catalog swiper-catalog--prev"></div>
+        <div class="swiper-catalog swiper-catalog--next"></div>
       </div>
     </section>
-    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -273,6 +334,7 @@
           </form>
         </section>
         <section class="footer__info info">
+          <h2 class="visually-hidden">Информация</h2>
           <ul class="info__list">
             <li>Ordering & Payment</li>
             <li>Terms & Conditions</li>
@@ -285,6 +347,7 @@
           </ul>
         </section>
         <section class="footer__social social">
+          <h2 class="visually-hidden">Социльные сети ювелирного салона</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/ch"
@@ -327,6 +390,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/filter.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/menu.js" type="module"></script>
+  <script src="js/filter.js" type="module"></script>
+  <!-- <script src="js/slider-catalog.js" type="module"></script> -->
 </body>
 </html>

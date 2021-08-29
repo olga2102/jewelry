@@ -1,7 +1,7 @@
-new Swiper(".new__swiper", {
+new Swiper(".catalog__swiper", {
   navigation: {
-    nextEl: '.swiper--next',
-    prevEl: '.swiper--prev',
+    nextEl: '.swiper-catalog--next',
+    prevEl: '.swiper-catalog--prev',
   },
   pagination: {
     el: '.swiper-pag',
@@ -11,13 +11,13 @@ new Swiper(".new__swiper", {
     }
   },
   breakpoints: {
-    360: {
-    slidesPerView: 1,
+    320: {
+    slidesPerView: 2,
     slidesPerGroup: 2
     },
-    978: {
-      slidesPerView: 4,
-      slidesPerGroup: 4
+    768: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
       }
   },
   spaceBetween: 30,
