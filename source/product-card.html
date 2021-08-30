@@ -160,7 +160,7 @@
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
               <picture>
-                <source type="image/webp" srcset="index/necklace.webp 1x, img/index/necklace@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/necklace.webp 1x, img/index/necklace@2x.webp 2x">
                 <!-- 1х: 270px/284px; 2x: 540px/568px -->
               <img class="new__img" src="img/index/necklace.jpg" srcset="img/index/necklace@2x.jpg" width="270" height="284"
                 alt="Серебряное ожерелье с аметистом">
@@ -172,7 +172,7 @@
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
               <picture>
-                <source type="image/webp" srcset="index/choker.webp 1x, img/index/choker@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/choker.webp 1x, img/index/choker@2x.webp 2x">
                 <!-- 1х: 270px/284px; 2x: 540px/568px -->
               <img class="new__img" src="img/index/choker.jpg" srcset="img/index/choker@2x.jpg" width="270" height="284"
                 alt="Чокер с серебряной подвеской в виде треугольника">
@@ -184,7 +184,7 @@
           <li class="new__item swiper-slide">
             <a class="new__item-link" href="#">
               <picture>
-                <source type="image/webp" srcset="index/index/chain.webp 1x, img/index/chain@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/chain.webp 1x, img/index/chain@2x.webp 2x">
                 <!-- 1х: 270px/284px; 2x: 540px/568px -->
               <img class="new__img" src="img/index/chain.jpg" srcset="img/index/chain@2x.jpg" width="270" height="284"
                 alt="Золотая цепочка из нескольких цепей с медальоном">
@@ -287,6 +287,26 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__inner">
+      <button class="modal__close-button close-button" aria-label="Закрыть форму"></button>
+      <h2>Log In</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label for="email" aria-label="Поле для ввода электронной почты">
+          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+        </label>
+        <label for="password" aria-label="Поле для ввода пароля">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        </label>
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+        <div class="modal__wrapper">
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </section>
   <section class="modal-card">
     <div class="modal-card__inner">
       <button class="modal-card__close-button close-button" aria-label="Закрыть форму"></button>
@@ -323,6 +343,7 @@
   <script src="js/menu.js"></script>
   <script src="js/card.js"></script>
   <script src="js/slider-index.js"></script>
+  <script src="js/login.js" type="module"></script>
 </body>
 
 </html>

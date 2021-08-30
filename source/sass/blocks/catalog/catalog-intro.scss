@@ -5,6 +5,28 @@
   background-image: url("../img/catalog/catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/catalog-bg@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/catalog/catalog-bg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-size: contain;
+      background-image: url("../img/catalog/catalog-bg-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/catalog/catalog-bg-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-size: contain;
+      background-image: url("../img/catalog/catalog-bg-mobile@2x.jpg");
+    }
+  }
 }
 
 .catalog-intro h2 {
@@ -12,6 +34,7 @@
   font-weight: bold;
   font-size: 34px;
   text-align: center;
+  color: white;
 }
 
 .catalog-intro p {
@@ -20,4 +43,5 @@
   font-weight: 500;
   font-size: 22px;
   text-align: center;
+  color: white;
 }

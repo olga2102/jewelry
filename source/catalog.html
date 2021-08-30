@@ -390,9 +390,30 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__inner">
+      <button class="modal__close-button close-button" aria-label="Закрыть форму"></button>
+      <h2>Log In</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label for="email" aria-label="Поле для ввода электронной почты">
+          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+        </label>
+        <label for="password" aria-label="Поле для ввода пароля">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        </label>
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+        <div class="modal__wrapper">
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </section>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/menu.js" type="module"></script>
   <script src="js/filter.js" type="module"></script>
+  <script src="js/login.js" type="module"></script>
   <!-- <script src="js/slider-catalog.js" type="module"></script> -->
 </body>
 </html>

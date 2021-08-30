@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
   margin-bottom: 50px;
   min-width: 0;
 }
@@ -48,14 +49,6 @@
 
   @media (max-width: $mobile-width) {
     width: 130px;
-
-    // &:nth-child(3n) {
-    //   margin-right: 30px;
-    // }
-
-    // &:nth-child(2n) {
-    //   margin-right: 0;
-    // }
   }
 }
 
@@ -153,10 +146,6 @@
 
 .catalog__wrapper ul {
   @include list-reset;
-
-  // @media (max-width: $tablet-width) {
-  //   display: none;
-  // }
 }
 
 .catalog__wrapper li {
