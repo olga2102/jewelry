@@ -26,8 +26,8 @@ closeButton.addEventListener("click", () => {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.key === "Escape" || evt.key === "Esc") {
-    if (modalCard.classList.contains("modal--opened")) {
-      modalCard.classList.remove("modal--opened");
+    if (modalCard.classList.contains("modal-card--opened")) {
+      modalCard.classList.remove("modal-card--opened");
     }
   }
 });

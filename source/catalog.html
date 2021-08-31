@@ -8,8 +8,6 @@
   <title>Каталог ювелирных украшений</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" rel="preload" crossorigin="anonymous">
@@ -96,7 +94,7 @@
       <a class="catalog__filter-link" href="#">Filter</a>
       <div class="catalog__wrapper">
         <form class="catalog__filter filter">
-          <button class="catalog__close-button close-button close-button--black" aria-label="Закрыть форму"></button>
+          <button class="catalog__close-button close-button close-button--black" type="button" aria-label="Закрыть форму"></button>
           <fieldset class="catalog__fieldset">
             <h3 class="catalog__title">Product</h3>
             <ul>
@@ -322,8 +320,8 @@
           <h2>The good stuff in your inbox </h2>
           <p>News and updates from CH. No spam, we promise.</p>
           <form>
-            <label for="email">
-              <input type="email" id="email" name="email" placeholder="Your E-mail">
+            <label for="mail">
+              <input type="email" id="mail" name="email" placeholder="Your E-mail">
             </label>
             <div>
               <button type="submit">Sign Up</button>
@@ -392,7 +390,7 @@
   </footer>
   <section class="modal">
     <div class="modal__inner">
-      <button class="modal__close-button close-button" aria-label="Закрыть форму"></button>
+      <button class="modal__close-button close-button" type="button" aria-label="Закрыть форму"></button>
       <h2>Log In</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <label for="email" aria-label="Поле для ввода электронной почты">

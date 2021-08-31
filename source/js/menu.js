@@ -40,4 +40,3 @@ toggle.addEventListener("click", () => {
         logo.style.fill = "rgba(168, 123, 98, 1)";
     }
 });
-

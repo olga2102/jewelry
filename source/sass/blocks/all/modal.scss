@@ -113,7 +113,8 @@
 }
 
 .modal form a {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin-left: auto;
   margin-bottom: 50px;
   font-weight: 500;
@@ -128,6 +129,7 @@
 
 .modal p {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -140,6 +142,7 @@
 
 .modal p + a {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
@@ -151,4 +154,3 @@
 .modal__wrapper {
   display: flex;
 }
-

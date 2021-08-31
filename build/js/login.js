@@ -7,7 +7,7 @@ const forms = document.querySelectorAll("form");
 
 const removeClass = () => {
   modalLogin.classList.remove("modal--opened");
-  page.classList.remove("page__body--lock");
+  body.classList.remove("page__body--lock");
 }
 
 const getAllClass = (str) => {

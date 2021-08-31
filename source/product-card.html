@@ -8,15 +8,13 @@
   <title>Каталог ювелирных украшений</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-500.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-700.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/poppins-v15-latin-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
@@ -143,7 +141,7 @@
               <dd>18” / 20”</dd>
             </dl>
           </div>
-          <button class="card__button">Add to cart</button>
+          <button class="card__button" type="button">Add to cart</button>
           <div class="card__info">
             <p>14 Day Returns</p>
             <p>2-Year Warranty</p>
@@ -219,8 +217,8 @@
           <h2>The good stuff in your inbox </h2>
           <p>News and updates from CH. No spam, we promise.</p>
           <form>
-            <label for="email">
-              <input type="email" id="email" name="email" placeholder="Your E-mail">
+            <label for="mail">
+              <input type="email" id="mail" name="email" placeholder="Your E-mail">
             </label>
             <div>
               <button type="submit">Sign Up</button>
@@ -289,7 +287,7 @@
   </footer>
   <section class="modal">
     <div class="modal__inner">
-      <button class="modal__close-button close-button" aria-label="Закрыть форму"></button>
+      <button class="modal__close-button close-button" type="button" aria-label="Закрыть форму"></button>
       <h2>Log In</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <label for="email" aria-label="Поле для ввода электронной почты">
@@ -309,7 +307,7 @@
   </section>
   <section class="modal-card">
     <div class="modal-card__inner">
-      <button class="modal-card__close-button close-button" aria-label="Закрыть форму"></button>
+      <button class="modal-card__close-button close-button" type="button" aria-label="Закрыть форму"></button>
       <h2>The item was added to your cart</h2>
       <div class="modal-card__wrapper">
         <picture>
@@ -322,11 +320,11 @@
           <p>$ 115</p>
         </div>
         <div class="modal-card__counter">
-          <button class="modal-card__button modal-card__button--plus"></button>
+          <button class="modal-card__button modal-card__button--plus" type="button"></button>
           <label for="number">
             <input id="number" type="number" name="number" value="1">
           </label>
-          <button class="modal-card__button modal-card__button--minus"></button>
+          <button class="modal-card__button modal-card__button--minus" type="button"></button>
         </div>
       </div>
       <div class="modal-card__total">

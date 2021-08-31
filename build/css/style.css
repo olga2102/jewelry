@@ -446,6 +446,7 @@ img {
 .new a {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   margin: 0 0 60px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -540,6 +541,7 @@ img {
 .blog a {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   margin: 0 0 60px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -771,6 +773,7 @@ img {
 .gallery a {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   margin: 0 0 70px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -1088,7 +1091,8 @@ img {
   padding: 0 7px; }
 
 .modal form a {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin-left: auto;
   margin-bottom: 50px;
   font-weight: 500;
@@ -1101,6 +1105,7 @@ img {
 
 .modal p {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -1112,6 +1117,7 @@ img {
 
 .modal p + a {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
@@ -1815,6 +1821,7 @@ img {
 
 .modal-card__total p {
   display: inline-block;
+  vertical-align: middle;
   margin: 0 0 40px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
